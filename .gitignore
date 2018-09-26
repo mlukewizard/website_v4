@@ -1,0 +1,15 @@
+*.DS_Store
+*.pyc
+.git
+
+env
+venv
+
+node_modules/
+npm-debug.log
+bower_components/
+.module-cache
+.idea/
+project/database/website_db.db
+project/templates/.cache/
+project/templates/dist/
