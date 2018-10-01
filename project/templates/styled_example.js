@@ -21,25 +21,25 @@ var column = {
 
 // This is a way of defining a component with a lambda expression
 // Also shows an example of passing children into the component
-const LukeDiv = ({ className, children }) => (
-    <div className={className}>
-        {children}
-    </div>
-);
+// const LukeDiv = ({ className, children }) => (
+//     <div className={className}>
+//         {children}
+//     </div>
+// );
 
 // This is a way of defining a component the same component with full on class shit
-// class LukeDiv extends React.Component {
-//     constructor(props, { className, children }) {
-//         super(props);
-//     }
+class LukeDiv extends React.Component {
+    constructor(props) {
+        super(props);
+    }
 
-//     render() {
-//         return (
-//             <div className={className}>
-//                 {children}
-//             </div>)
-//     }
-// }
+    render() {
+        return (
+            <div className={this.props.className}>
+                {this.props.children}
+            </div>)
+    }
+}
 
 const StyledDiv = styled(LukeDiv)`
 color: palevioletred;

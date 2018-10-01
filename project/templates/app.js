@@ -5,6 +5,7 @@ import BasicExample from './routing_example';
 import ButtonAppBar from "./convert_to_ES6";
 import TitleBar from './styled_example';
 import global_constants from './constants';
+import CoolList from "./flexbox_example";
 
 // A WAY OF DEFINING A COMPONENT WITH A LAMBDA EXPRESSION (ALSO USED IN STYLED_EXAMPLE)
 const Home = () => (
@@ -43,6 +44,7 @@ class App extends React.Component {
                 {/* AND THE BELOW IS AN EXAMPLE OF HOW YOU CAN USE {} TO GET A COMPONENT FROM OUTSIDE JSX*/}
                 <div>{second}</div>
                 <BasicExample />
+                <CoolList />
                 <Route exact path="/" component={Home} />
             </div>
         </BrowserRouter>
